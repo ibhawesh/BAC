@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>BUDDING ARTISTS COLLAB</title>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Cute Font' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/particle.css">
+</head>
+<body id="myPage particle" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		</button>
+		<a class="navbar-brand" href="index.php">BUDDING ARTISTS </a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav navbar-right">
+    <li><a href="index.php">HOME</a></li>
+	     <li><a href="Vote.php">VOTE</a></li>
+		
+		</ul>
+		</div>
+	</div>
+	</nav>
+
+	<div class="jumbotron " id="particles-js"></div>
+	<div class="count-particles text-center ">
+		<center><h1>BUDDING ARTISTS </h1> 
+			<h2 style="color: aliceblue;">VOTE PANNEL</h2> 
+			<h2 style="color: aliceblue;">THIRD ROUND -FOLK & CULTURAL SONGS</h2>
+		</center>
+	</div>
+
+
+	<div id="services" class="container text-center">
+
+		<div class="container">
+      
+            <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#000">
+             VOTE SUCCESS!!<BR>
+             YOU VOTED : <strong><p  id = "participant"></p></strong>
+                
+                <script>
+                      var Name = $("#sakha option:selected").text();      
+                     
+                </script>
+            </h3>
+			<br>
+			
+			<form name="myform" class="form-horizontal" method = "post" id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+              
+            <div class="form-group">
+				<label class="control-label col-sm-2" for="pwd">SELECT PARTICIPANT :</label>
+				<div class="col-sm-10">          
+				<select class="form-control" id="sakha" name="entry.541381426" placeholder="Select Sakha" required>
+				<option value="">SELECT PARTICIPANT</option>
+				<option value="KEWAL SINCHURY">1. KEWAL SINCHURY -Pokhriabong, turzum</option>	
+				<option value=" DIKSHA SUBBA">2. DIKSHA SUBBA -RELLING</option>	
+				<option value="MANOJ CHHETRI">3. MANOJ CHHETRI -SUKIA</option>
+				<option value="ASHA SUBBA">4. ASHA SUBBA -PARBONG BIJANBARI</option>	
+				<option value="KIRAN DARJI ">5. KIRAN DARJI -SIKKIM RANIPUL</option>
+				
+				<option value="WANGEL TAMANG">6. WANGEL TAMANG - CHONGTHONG T.E BIJANBARI</option>
+				<option value="SITAL MANGER ">7. SITAL MANGER -PEMBONG MIM</option>	
+				<option value="LHACHEN LAMA">8. LACHEN LAMA -DARJEELING</option> 	
+				<option value="SUDIR SUBBA">9. SUDIR SUBBA -BIJANBARI</option>
+				<option value="KARISHMA RAI ">10. KARISHMA RAI -TUMSONG T.E</option>
+					
+				<option value="ROHAN TAMANG ">11. ROHAN TAMANG -RANGIT MAZUWA</option> 	
+				<option value="POPPY GURUNG">12. POPPY GURUNG -ARUNACHAL PRADESH </option>
+				<option value="DIKSHA NEROLA">13. DIKSHA NIROULA -POOBONG DARJEELING</option>
+				<option value="ANUYOG RAI">14. ANUYOG RAI -CHONGTONG T.E. DILBIR DHURA</option> 
+				<option value="PRAJWAL DAHAL">15. PRAJWAL DAHAL -RELLING</option>
+					
+				<option value="NILAM GHIMIRAY">16. NILAM GHIMIRAY -BIJANBARI</option>
+				<option value="LAZONG BHUTIA ">17. LAZONG BHUTIA -ARITAR SIKKIM</option> 
+				<option value="PINKEY GURUNG">18. PINKEY GURUNG -BIJANBARI</option> 	
+				<option value="PRANIKA THAPA">19. PRANIKA THAPA -GOKE</option>
+				<option value="ARPANA PRADHAN JHOSHI">20. ARPANA PRADHAN JHOSHIN -TUMSONG</option>
+				 
+				<option value="NIKHIL THAPA">21. NIKHIL THAPA -CHONGTHONG T.E</option>	
+                                <option value="ARCHANA SHARMA">22. ARCHANA SHARMA -GARBEYTAR BUSTY BIJANBARI</option> 
+				<option value="GAURI RAI">23. GAURI RAI -GAIRIBAS JALDHAKA</option> 
+			        <option value=" PRASHANT KHATIWADA">24. PRASHANT KHATIWADA -JHEPI</option>
+				<option value="RANJANA SUBBA">25. RANJANA SUBBA -BIJANBARI</option> 
+                               
+				<option value="PRANISHA GAZMER">26. PRANISHA GAZMER -SELIMBONG T.E</option>	
+				<option value="SUNIL RAI">27. SUNIL RAI -GOKE</option>	
+				<option value="ROMA TAMANG">28. ROMA TAMANG -RANIPUL SIKKIM</option>
+				<option value="PRANESH MUKHIA">29. PRANESH MUKHIA -SELIMBONG T.E</option> 
+				<option value="NILIMA GHIMIRAY ">30. NILIMA GHIMIRAY -BIJANBARI</option>
+						                             	
+										
+	      		    </select> 
+				</div>
+			  </div>
+            
+            
+            
+            
+            
+            <div class="form-group">
+				<label class="control-label col-sm-2" for="email">VOTER'S NAME :</label>
+				<div class="col-sm-10">
+					<input class="form-control" id="nameField" name="entry.484271059" placeholder="Enter your name" type="text" required> 
+				</div>
+			  </div>
+
+
+                <style>
+                
+                   .btn-success{
+                       background-color:#f4511e !important;
+                   }
+                   #participant{
+                    color: green !important;
+                   }
+                </style>			
+              <div class="form-group">
+				<label class="control-label col-sm-2" for="pwd">VOTER'S ADDRESS</label>
+				<div class="col-sm-10">          
+					<input class="form-control" id="emailField" name="entry.1617838564" placeholder="Enter your Address"" required> 
+				</div>
+			  </div>
+			  <div class="form-group">        
+				<div class="col-sm-offset-2 col-sm-10">
+ 		
+				<button class="form-control btn btn-success" id="send" type="submit" class="common_btn">VOTE NOW</button> 
+				</div>
+			  </div>
+			</form>
+		  </div>
+	</div>
+<script>
+	function postToGoogle() {
+    document.cookie = "VOT=TRU; expires=Thu, 31 Dec 2020 23:59:59 GMT";
+    var field1 = $("#nameField").val();
+    var field2 = $("#emailField").val();
+    var field3 = "";
+    var field4 = "";
+    var field5 = $("#sakha option:selected").text();
+    document.getElementById("participant").innerHTML = field5;
+//validations
+    if(field1 == ""){
+        alert('Please Fill Your Name');
+        document.getElementById("nameField").focus();
+        return false;
+    }
+    if(field2 == ""){
+        alert('Please Fill Your Address');
+        document.getElementById("nameField").focus();
+        return false;
+    }
+    if(field5 == ""){
+        alert('Please Select Participant ');
+        document.getElementById("sakha").focus();
+        return false;
+    }
+//cooks
+     if( document.cookie)
+    {
+        var allcookies = document.cookie;
+        var cookiearray = allcookies.split(';');
+        // Now take key value pair out of this array
+        for(var i=0; i<cookiearray.length; i++) {
+          name = cookiearray[i].split('=')[0];
+          value = cookiearray[i].split('=')[1];
+        }
+        if(name == "VOT" && value == "TRU"){
+        
+            alert("YOU HAVE ALREADY VOTED!!!!!");
+            return;
+        }
+    }
+    else{
+      alert("No cookie");
+      document.cookie = "VOTE= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"		  
+      document.cookie = "VOT=TRU; expires=Thu, 31 Dec 2020 23:59:59 GMT";
+      $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeYXbFrMbUwzAQJipi0KlTlDAxb0MprpiGiGCOf4s9cF-Qy7g/formResponse?",
+        data: {"entry.484271059": field1, "entry.1617838564": field2, "entry.1620187497": field3, "entry.1935172545": field4, "entry.541381426": field5},
+        type: "POST",
+        dataType: "xml",
+        success: function(d)
+        {
+        },
+        error: function(x, y, z)
+            {
+
+                $('#success-msg').show();
+                $('#form').hide();
+                
+            }
+    });
+    return false;
+}  
+    }
+
+
+    
+</script>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+
+</footer>
+<script src="js/Register.js"></script>
+<script src="js/script.js"></script>
+<script src="js/particle.js"></script>
+</body>
+</html>
